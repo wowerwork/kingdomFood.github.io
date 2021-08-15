@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="first-screen">
+        <header class="header">
+            <div class="container header-inner">
+                <div class="header-burger"><span></span></div>
+                <nav class="header-navigation ">
+                    <ul class="header-navigation__list  ">
+                        <li class="header-navigation__item "><a href="#menu"
+                                class="header-navigation__link text-white">Меню</a></li>
+                        <li class="header-navigation__item"><a href="#about"
+                                class="header-navigation__link text-white">О нас</a></li>
+                        <li class="header-navigation__item"><a href="#reviews"
+                                class="header-navigation__link text-white">Отзывы</a></li>
+                        <li class="header-navigation__item"><a href="#footer"
+                                class="header-navigation__link text-white">Контакты</a></li>
+                       
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <img src="images/logo.svg" alt="" class="logo__img">
+                </div>
+                
+                <ul class="contacts text-white">
+                    <li class="contacts-item">+7 917 987  11 12</li>
+                    <li class="contacts-item">C 8:00 до 22:00</li>
+                    <li class="contacts-item"> <img src="images/cart.svg" alt="" class="cart__img"></li>
+                </ul>
+
+               
+
+
+
+
+
+            </div>
+
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 ">
+                        <h1 class="main__title  text-uppercase text-white" data-aos="fade-right">Служба <span
+                                class="other_text">доставки
+                                еды</span> по Стерлитамаку</h1>
+                        <p class="main__desc text-white" data-aos="fade-up">Бесплатная доставка от <span
+                                class="other_text">200 р</span> .
+                            Оплата терминалом, на карту или наличными</p>
+                        <a href="#menu" class="btn main-btn text-white" data-aos="fade-down">Заказать</a>
+                    </div>
+                </div>
+                <div class="main__pizza">
+                    <img src="images/header-pizza.png" alt="">
+                </div>
+            </div>
+        </main>
+    </section>
+    
+    <section class="menu" id="menu">
+        <div class="container">
+          <div class="row ">
+            <div class="col-xl-12 text-center">
+                <h4 class="title text-white" data-aos="fade-up-right">Меню</h4>
+                <div class="tabs__triggers "  >
+                    <a href="#" data-tab="1" class="nav-tab active text-white">Бургеры</a>
+                    <a href="#" data-tab="2" class="nav-tab text-white">Пиццы</a>
+                    <a href="#" data-tab="3" class="nav-tab text-white">Супы</a>
+                    <a href="#" data-tab="4" class="nav-tab text-white">Суши</a>
+                    <a href="#" data-tab="5" class="nav-tab text-white">Роллы</a>
+                    <a href="#" data-tab="6" class="nav-tab text-white">Десерты</a>
+                </div>
+              <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane active">
+                  <div class="row d-flex justify-content-center burgers">
+                    
+                   
+                   
+                    
+                  </div>
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                    <div class="row d-flex justify-content-center pizza">
+                       
+                    </div>
+                </div>
+                <div data-tab-content="3" class="tab-pane">
+                    <div class="row d-flex justify-content-center soups">
+                        
+
+                         </div>
+                </div>
+                <div data-tab-content="4" class="tab-pane">
+                    <div class="row d-flex justify-content-center sushi"> 
+                        
+                    </div>
+                </div>
+                <div data-tab-content="5" class="tab-pane">
+                    <div class="row d-flex justify-content-center rolls"> 
+                       
+
+                    </div>
+                </div>
+                <div data-tab-content="6" class="tab-pane">
+                    <div class="row d-flex justify-content-center desserts">
+            
+
+                    </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+        </div>
+      </section>
+      
+
+   <div class="cart">
+        <div class="cart-content">
+            <h6 class="cart-title text-white">Корзина заказа</h6>
+            <div class="myorder">
+                <p class="myorder-name text-white">Мой заказ</p>
+                <span class="menu-item__price myorder-price text-white"></span>
+            </div>
+            <ul class="cart-content__list"></ul>
+            <div class="fullprice">
+                <p class="fullprice-name text-white">Общая сумма заказа:</p>
+                <span class="menu-item__price fullprice-price text-white"></span>
+            </div>
+            <div class="cart-button">
+                <button class="btn w-100 text-white fw-bold order-btn"  data-modal-btn="open_order">Оформить заказ</button>
+            </div>
+        </div>
+    </div> 
+    <div class="order-window" data-modal-window="open_order" role="dialog" aria-modal="true">
+        <div class="order-window__content" >
+            <div class="order-window__wrapper">
+           
+                <div class="order-window__top">
+                    
+                    <h2 class="order-window__title">Оформление заказа</h2>
+                    <span class="order-window__close">&times;</span>
+                </div>  
+                <div class="order-window__info">
+                    <div class="order-window__quantity order-window__info-item">Товаров в заказе: <span class="order-window__info-item__qty"></span></div>
+                    <div class="order-window__fullprice order-window__info-item">Общая сумма заказа: <span class="order-window__fullprice-price"></span></div>
+                    <div class="order-window__orderList order-window__info-item">
+                      <button class="order-window__btn" type="submit">Состав заказа</button>  
+                      <ul class="order-window__list">
+                          
+                      </ul>
+                  </div>
+                </div>
+                <form action="#" class="order-window__form order">
+                    <input type="hidden" name="theme" value="Обратный звонок">
+					<input type="hidden" name="admin_email[]" value="aleksandar.zaxers@yandex.ru">
+					<input type="hidden" name="form_subject" value="Заявка с сайта">
+      <label class="order-label">
+          <span class="order-text">Ваше имя</span>
+          <input type="text" name="Имя" class="order-input">
+      </label>
+      <label class="order-label">
+          <span class="order-text">Номер телефона</span>
+          <input type="tel" name="Телефон" class="order-input" placeholder="+7(__)__-__-__">
+      </label>
+      <label class="order-label">
+          <span class="order-text">Электронная почта</span>
+          <input type="email"  name="Email" class="order-input" placeholder="example@mail.ru">
+      </label>
+      <button class="order-btn btn w-100 text-white">Оформить заказ</button>
+      
+                </form>
+              </div>
+        </div>
+        
+    </div>
+      <section class="about" id="about">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h4 class="title text-white about-title" data-aos="fade-up-right">Почему именно мы?</h4>
+                </div>
+
+            
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 about-item text-center" data-aos="fade-up-right" >
+                    <img src="images/truck.svg" alt="">
+                    <h6 class="text-white about-item__title" >Бесплатная доставка</h6>
+                    <p class="text-white about-item__desc">Бесплатная доставка еды по всему Стерлитамаку, доставим за 60 минут или вернем
+                        вам деньги</p>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 about-item text-center" >
+                    <img src="images/products.svg" alt="">
+                    <h6 class="text-white about-item__title">Свежие продукты</h6>
+                    <p class="text-white about-item__desc">Мы никогда не используем полуфабрикаты и усилители вкуса а также не подвергаем продукты долгому хранению</p>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 about-item text-center" >
+                    <img src="images/chef.svg" alt="">
+                    <h6 class="text-white about-item__title">Опытные повара</h6>
+                    <p class="text-white about-item__desc">Наши повара - это обученные професианалы которые ежегодно повышают свою квалификацию</p>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 about-item text-center" >
+                    <img src="images/recipe-book.svg" alt="">
+                    <h6 class="text-white about-item__title">Оригинальные рецепты</h6>
+                    <p class="text-white about-item__desc">Готовим с применением современных технологий но по оригинальной и традиционной рецептуре.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>    
+    
+        
+      <section class="reviews" id="reviews">  
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+                <h4 class="title text-white reviews-title text-center" data-aos="fade-up-right">Отзывы наших клиентов</h4> 
+              
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-container reviews-slider">
+                  
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-aos="fade-up">
+                        <div class="reviews-avatar d-flex align-items-center">
+                          <div class="reviews-avatar__left">
+                            <img src="images/review1.png" alt="Ирина">
+                          </div>
+                            <div class="reviews-avatar__right">
+                                <h6 class="reviews-avatar__title" data-aos="fade-right">Ирина</h6>
+                                <span class="reviews-avatar__date"> 5 ноября 2019</span>
+                            </div>
+                        
+                        </div>
+                        <div class="reviews-text " data-aos="fade-up-left">
+                         <p>Огромное спасибо за ваш сервис! У меня появилось много свободного времени на семью и хобби при этом качество питания не пострадало а стало даже лучше</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide" data-aos="fade-bottom">
+                        <div class="reviews-avatar d-flex align-items-center">
+                          <div class="reviews-avatar__left">
+                            <img src="images/review2.png" alt="Михаил">
+                          </div>
+                            <div class="reviews-avatar__right">
+                                <h6 class="reviews-avatar__title">Михаил</h6>
+                                <span class="reviews-avatar__date"> 13 января 2020</span>
+                            </div>
+                        
+                        </div>
+                        <div class="reviews-text" data-aos="fade-up">
+                         <p>Оформлял доставку на дом. Заказ быстро оформили есть сайт которым удобно пользоваться с мобильного телефона можно платить картой и наличными</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide" data-aos="fade-up-right">
+                        <div class="reviews-avatar d-flex align-items-center">
+                          <div class="reviews-avatar__left">
+                            <img src="images/review3.png" alt="Ольга">
+                          </div>
+                            <div class="reviews-avatar__right">
+                                <h6 class="reviews-avatar__title">Ольга</h6>
+                                <span class="reviews-avatar__date"> 20 мая 2020</span>
+                            </div>
+                        
+                        </div>
+                        <div class="reviews-text" data-aos="fade-left">
+                         <p>Спасибо вам за такую качественную еду и уровень обслуживания. Заказывали один раз но все прошло просто замечательно. Будем оформлять покупку еще не один раз</p>
+                        </div>
+                      </div>
+                                </div>
+                               
+                  
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>    
+      
+        <footer class="footer" id="footer">
+          <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="" class="logo__img">
+                </div>
+                <nav class="footer-navigation ">
+                    <ul class="footer-navigation__list">
+                        <li class="footer-navigation__item "><a href="#menu"
+                                class="footer-navigation__link text-white">Меню</a></li>
+                        <li class="footer-navigation__item"><a href="#about"
+                                class="footer-navigation__link text-white">О нас</a></li>
+                        <li class="footer-navigation__item"><a href="#reviews"
+                                class="footer-navigation__link text-white">Отзывы</a></li>
+                        
+                       
+                    </ul>
+                </nav>
+                
+                
+                <span class="footer_phone text-white">+7 917 987  11 12</span>  
+            </div>
+          </div>
+      </footer> 
+    
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="js/handlebars.min-v4.7.7.js"></script>
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
